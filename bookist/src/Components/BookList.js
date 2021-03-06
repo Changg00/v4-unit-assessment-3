@@ -7,7 +7,7 @@ const BookList = (props) => {
             <div>
                 {props.books.map(mappedbook => (<div>
                     
-                <img onClick={() => props.addToShelf[mappedbook]} src={mappedbook.img}/>
+                <img onClick={() => props.addToShelf[mappedbook.title]} src={mappedbook.img}/>
                 <p>Id: {mappedbook.id}</p>
                 <p>Title: {mappedbook.title}</p>
                 <p>Author: {mappedbook.author}</p>

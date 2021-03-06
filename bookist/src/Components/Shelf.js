@@ -1,10 +1,9 @@
 import React from 'react'
 
-export default function Shelf(){
+const mappedTitles = (props) => {
+  
 
-    return (
-        <div class="Shelf">
-            <h1>shelf</h1>
-        </div>
-    )
+    return(
+       
 }
+export default BookList

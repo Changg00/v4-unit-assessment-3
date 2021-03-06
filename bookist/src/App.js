@@ -16,13 +16,21 @@ class App extends Component {
       shelf: []
     };
   }
+  addToShelf(title) {
+    this.setState(function(state,title){
+      return {
+        shelf: state.shelf.push(title)
+      }
+    })
+  }
+
   render() {
   return (
     <div className="App">
      <Header />
      <BookList books={this.state.books} addToShelf={this.addToShelf} />
 
-     <Shelf />
+     <Shelf shelf={this.state.shelf} />
 
      
     </div>
